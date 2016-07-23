@@ -1,3 +1,9 @@
+/* 
+    By Quan You
+    Movie Reviews Stylesheet
+    IMI Assignment
+*/
+
 /* Gobal */
 
 body {
@@ -38,6 +44,17 @@ hr {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     margin: 15px 0;
     clear: both;
+}
+
+
+/* Make Life Easier */
+
+.text-center {
+    text-align: center;
+}
+
+.border-clear {
+    border-color: transparent;
 }
 
 
@@ -122,6 +139,10 @@ ul li a:hover {
     height: 235px;
 }
 
+.thumbnail img:hover {
+    opacity: 0.85;
+}
+
 .thumbnail h3 {
     font-size: 1.1em;
 }
@@ -134,14 +155,10 @@ ul li a:hover {
 }
 
 .ratings {
-    color: #999;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .ratings .rated {
-    color: white;
-}
-
-.rated {
     color: white;
 }
 
@@ -187,14 +204,14 @@ p small {
 }
 
 
-/* Remove soon as new class is introduced */
+/* Remove .comments soon as new class is introduced */
 
 .comments blockquote {
     text-align: left;
 }
 
 
-/* Remove soon as new class is introduced */
+/* Remove .comments blockquote soon as new class is introduced */
 
 .reviews {
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -212,7 +229,7 @@ p small {
 }
 
 .review-comments blockquote {
-    border-left: 2px solid grey;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
     padding-left: 20px;
 }
 
@@ -234,12 +251,12 @@ p small {
     float: right;
 }
 
-.cast-crew img {
+.directors img {
     width: 55px;
     border-radius: 100%;
 }
 
-.cast-crew img:hover {
+.directors img:hover {
     opacity: 0.65;
 }
 
@@ -274,6 +291,16 @@ p small {
     content: "/\00a0";
 }
 
+.genre-nav {
+    margin: 27px 0;
+}
+
+.genre-nav a+a:before {
+    padding: 0 20px;
+    color: rgba(111, 111, 111, 0.8);
+    content: "|\00a0";
+}
+
 .tab {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 10px;
@@ -302,7 +329,7 @@ p small {
 }
 
 .card {
-    border: 1px solid #4c4d55;
+    border: 1px solid rgba(76, 77, 85, 0.5);
     width: 100%;
     position: relative;
     display: inline-block;
@@ -316,6 +343,83 @@ p small {
     margin: 0 15px 0 0;
     float: left;
 }
+
+.card-rating {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 10px;
+    color: lightgrey;
+    border-bottom: 1px solid rgba(76, 77, 85, 0.5);
+    border-left: 1px solid rgba(76, 77, 85, 0.5);
+}
+
+.card:hover {
+    background-color: #22252d;
+    color: white;
+}
+
+.video h3,
+.video p {
+    margin: 0 0 15px 0;
+}
+
+.genres {}
+
+.genre {
+    float: left;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.genre img {
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 125px;
+}
+
+
+/* Genre Page */
+
+.genre-type {
+    text-align: center;
+    float: left;
+    margin-right: 90px;
+}
+
+.genre-type img {
+    width: 100px;
+}
+
+.genre-type p {
+    margin: 0;
+}
+
+.genre-thumbnail {
+    float: left;
+    line-height: 5px;
+    margin-bottom: 15px;
+}
+
+.genre-thumbnail img {
+    width: 172px;
+    height: 244px;
+    margin-left: -50px;
+}
+
+
+/* Banner Fake */
+
+.banner img {
+    width: 100%;
+}
+
+.banner img:hover {
+    opacity: 0.8;
+}
+
+
+/* Reset */
 
 
 /*
@@ -340,16 +444,41 @@ p small {
 }
 */
 
-.card-rating {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 5px 10px;
-    color: lightgrey;
-    border-bottom: 1px solid grey;
-    border-left: 1px solid grey;
+.social-links {
+    clear: both;
 }
 
+.slink {
+    padding: 20px 0;
+    width: 50%;
+    float: left;
+}
+
+.social-links .facebook {
+    text-align: center;
+    color: white;
+    background-color: #3b5998;
+}
+
+.social-links .twitter {
+    text-align: center;
+    color: white;
+    background-color: #55acee;
+}
+
+.social-links .facebook:hover {
+    color: white;
+    background-color: rgba(59, 89, 152, 0.7);
+}
+
+.social-links .twitter:hover {
+    color: white;
+    background-color: rgba(85, 172, 238, 0.7);
+}
+
+.form {
+    display: flex;
+}
 
 /* Text Variants */
 
@@ -443,11 +572,28 @@ p small {
     background: linear-gradient(#48bbcd, #367851);
 }
 
+/* Sand Sence Poster*/
+.bgsand {
+    background: linear-gradient(#6c7474, #6f929a);
+}
 
-/* Logo */
+.bgevening {
+    background: linear-gradient(#6570c9, #ffd6aa);
+}
+
+
+/* Inverse */
 
 .logo-dark {
     filter: invert(1);
+}
+
+.inverse {
+    filter: invert(1);
+}
+
+.icon {
+    width: 150px;
 }
 
 
@@ -455,6 +601,32 @@ p small {
 
 
 /* Media Query */
+
+@media (max-width: 1136px) {
+    .container {
+        max-width: 950px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 736px) {
+    .half {
+        width: 100%;
+    }
+}
+
+@media (min-width: 0) and (max-width: 736px) {
+    nav ul li {
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+    }
+}
 
 
 /* Testing Stage */
