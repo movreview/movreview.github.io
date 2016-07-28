@@ -10,9 +10,9 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
     color: #95a5a6;
     background-color: #131519;
-    font-family: Arial, sans-serif;
 }
 
 h1,
@@ -36,7 +36,7 @@ a:hover {
 
 footer {
     clear: both;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 footer p {
@@ -88,7 +88,7 @@ input[type=search]:focus {
 input[type=name] {
     height: 40px;
     background: rgba(255, 255, 255, 0.1);
-    padding-left: 15px;
+    text-indent: 20px;
     border: 0;
     border-radius: 3px;
     color: white;
@@ -97,7 +97,7 @@ input[type=name] {
 input[type=email] {
     height: 40px;
     background: rgba(255, 255, 255, 0.1);
-    text-indent: 15px;
+    text-indent: 20px;
     border: 0;
     border-radius: 3px;
     color: white;
@@ -106,7 +106,9 @@ input[type=email] {
 textarea {
     background: rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
     text-indent: 15px;
+    width: 295px;
     border: 0;
     border-radius: 3px;
     color: white;
@@ -117,7 +119,11 @@ textarea {
 /* Important */
 
 .container {
+    /* Main Container for Large Device | Currently Useless | But use as a fallback */
     max-width: 88%;
+    /* Disable Zoom ATM */
+    min-width: 1100px;
+    /* Main Container width */
     width: 1100px;
     margin: 0 auto;
 }
@@ -129,75 +135,13 @@ textarea {
     text-align: center;
 }
 
-#trailer-box {
-    border: 10px solid rgba(255, 255, 255, 0.35);
-    border-top: 0;
-    width: 98.2%;
-}
-
-
-/* Sections */
-
-#social-links {
-    clear: both;
-    margin-top: 20px;
-}
-
-.slink {
-    padding: 25px 0;
-    width: 50%;
-    float: left;
-}
-
-#social-links .facebook {
-    text-align: center;
-    color: white;
-    background-color: #3b5998;
-}
-
-#social-links .twitter {
-    text-align: center;
-    color: white;
-    background-color: #55acee;
-}
-
-#social-links .facebook:hover {
-    color: white;
-    background-color: rgba(59, 89, 152, 0.8);
-}
-
-#social-links .twitter:hover {
-    color: white;
-    background-color: rgba(85, 172, 238, 0.8);
-}
-
-#banner {
-    font-size: 170%;
-    line-height: 20px;
-    padding: 75px;
-    background-color: #252525;
-    background-image: url(../img/howl.jpg);
-    background-size: cover;
-    background-position: 0 -810px;
-    background-repeat: no-repeat;
-    box-shadow: 0 0 20px black;
-}
-
-#banner h1 {
-    font-weight: normal;
-}
-
-#banner p {
-    color: white;
-    font-size: 75%;
-}
-
 
 /* Normal Class */
 
 .brand {
     display: block;
     margin: 30px 0;
+    width: 150px;
 }
 
 .search {
@@ -398,7 +342,7 @@ p small {
 }
 
 
-/* Navs */
+/* Sub Navs */
 
 .breadcrumb {
     margin: 27px 0;
@@ -419,9 +363,6 @@ p small {
     color: rgba(111, 111, 111, 0.8);
     content: "|\00a0";
 }
-
-
-/**/
 
 .tab {
     background-color: rgba(255, 255, 255, 0.7);
@@ -474,8 +415,8 @@ p small {
 }
 
 .video {
-    display: flex;
     border: 5px solid rgba(255, 255, 255, 0.1);
+    border-top: 0;
 }
 
 .video-info {
@@ -500,18 +441,85 @@ p small {
     color: white;
 }
 
+
+/*  
+    Sections
+    -------------------
+    Social Links Section
+*/
+
+#social-links {
+    clear: both;
+    margin-top: 20px;
+}
+
+.slink {
+    padding: 25px 0;
+    width: 50%;
+    float: left;
+}
+
+#social-links .facebook {
+    text-align: center;
+    color: white;
+    background-color: #3b5998;
+}
+
+#social-links .twitter {
+    text-align: center;
+    color: white;
+    background-color: #55acee;
+}
+
+#social-links .facebook:hover {
+    color: white;
+    background-color: rgba(59, 89, 152, 0.8);
+}
+
+#social-links .twitter:hover {
+    color: white;
+    background-color: rgba(85, 172, 238, 0.8);
+}
+
+
+/* Banner Section */
+
+#banner {
+    font-size: 170%;
+    line-height: 20px;
+    padding: 75px;
+    background-color: #252525;
+    background-image: url(../img/poster/howl.jpg);
+    background-size: cover;
+    background-position: 0 -810px;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px black;
+}
+
+#banner h1 {
+    font-weight: normal;
+}
+
+#banner p {
+    color: white;
+    font-size: 75%;
+}
+
+
+/* Subscription Section */
+
 #subscription {
     text-align: center;
     padding: 20px 0;
 }
 
 #subscription input {
-    height: 30px;
+    height: 34px;
     width: 250px;
 }
 
 #subscription button {
-    height: 32px;
+    height: 36px;
     padding: 0 14px;
     border: 1px solid #555;
     border-radius: 3px;
@@ -524,7 +532,70 @@ p small {
 }
 
 
-/* Genre Page */
+/* Reviews Section */
+
+#reviews .comment {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: pink;
+    /* Fallback */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#reviews .comment:hover {
+    box-shadow: 0 0 10px rgba(000, 000, 000, 0.22);
+    35px
+}
+
+#reviews .comment p {
+    margin: 0;
+}
+
+#reviews span {
+    color: white;
+}
+
+#reviews .comment:nth-child(even) {
+    border-radius: 35px 0 35px 35px;
+}
+
+#reviews .comment:nth-child(odd) {
+    border-radius: 0 35px 35px 35px;
+    text-align: right;
+}
+
+#reviews button {
+    float: right;
+    padding: 12px 16px;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+    border-radius: 3px;
+    color: white;
+}
+
+
+/* Trailer Section */
+
+#trailer-box {
+    border: 10px solid rgba(255, 255, 255, 0.35);
+    border-radius: 0 0 3px 3px;
+    border-top: 0;
+    width: 98.2%;
+}
+
+
+/*
+    End of Section
+*/
+
+
+/* Genre Section */
+
+#genre .col-6 {
+    width: auto;
+    margin-left: auto;
+}
 
 .genre-type {
     text-align: center;
@@ -532,32 +603,34 @@ p small {
     margin-right: 90px;
 }
 
-.icon {
-    width: 150px;
-}
-
 .genre-type img {
-    width: 100px;
+    width: 78px;
 }
 
 .genre-type p {
-    margin: 0;
+    margin-top: 0;
 }
 
-.genre-thumbnail {
+.genre-type a {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+.genre-poster {
     float: left;
     line-height: 5px;
     margin-bottom: 15px;
 }
 
-.genre-thumbnail img {
+.genre-poster img {
     width: 172px;
-    height: 244px;
-    margin-left: -50px;
+    height: 264px;
+    margin-left: -82.4px;
 }
 
 
-/* Experiment */
+/* Genre */
 
 
 /* Text Variants */
@@ -594,7 +667,9 @@ p small {
 }
 
 
-/* Universal Background */
+/*
+ * Universal Background 
+*/
 
 
 /* Red Poster*/
@@ -653,14 +728,24 @@ p small {
 }
 
 
-/* Sand Sence Poster*/
+/* Sandy Poster*/
 
 .bgsand {
-    background: linear-gradient(#6c7474, #6f929a);
+    background: linear-gradient(#3e464d, #4d6b73);
 }
+
+
+/* Evening Poster*/
 
 .bgevening {
     background: linear-gradient(#6570c9, #ffd6aa);
+}
+
+
+/* Science Fiction Poster*/
+
+.bgscifi {
+    background: linear-gradient(#080705, #2f4a5f);
 }
 
 
@@ -675,10 +760,7 @@ p small {
 }
 
 
-/* Intergrate text var. into bg class */
-
-
-/* Media Query */
+/* Media */
 
 @media (max-width: 578px) {
     nav {
@@ -694,41 +776,29 @@ p small {
 }
 
 
-/*@media (max-width: 1136px) {
-    .container {
-        max-width: 950px;
-    }
-}
-
-@media (max-width: 1050px) {
-    .container {
-        max-width: 900px;
-    }
-}
-
-@media (max-width: 736px) {
-    .half {
-        width: 100%;
-    }
-}
-
-@media (min-width: 0) and (max-width: 736px) {
-    nav ul li {
-        display: block;
-        padding: 15px 0;
-        text-align: center;
-    }
-}*/
-
-
 /* Testing Stage */
 
 .notes {
-    background: rgba(255, 255, 255, 0.5);
-    color: #333;
+    background: rgba(000, 000, 000, 0.5);
+    color: white;
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 10px;
+    bottom: 10px;
     padding: 16px;
     max-width: 400px;
+    border-radius: 200px
+}
+
+.box {
+    margin: 10px 0;
+    width: 100%;
+    height: 98px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.grid-10 {
+    width: 8.2%;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
 }
