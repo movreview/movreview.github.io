@@ -137,6 +137,7 @@ textarea {
 }
 
 .search {
+    width: 200px;
     float: right;
 }
 
