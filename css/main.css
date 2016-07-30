@@ -137,6 +137,7 @@ textarea {
 }
 
 .search {
+    width: 200px;
     float: right;
 }
 
@@ -403,7 +404,7 @@ p small {
 }
 
 #contact {
-    width: 450px
+    width: 450px;
 }
 
 #contact button {
@@ -698,7 +699,7 @@ p small {
 /* Green Poster*/
 
 .bgforest {
-    background: linear-gradient(#48bbcd, #367851);
+    background: linear-gradient(#48bbcd, #6b9a5d);
 }
 
 
