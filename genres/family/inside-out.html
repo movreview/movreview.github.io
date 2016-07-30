@@ -6,25 +6,26 @@
     <!-- Prevent search engine web crawlers from indexing this page as it's only for assignment -->
     <meta name="robots" content="noindex">
     <title>Movreview | Inside Out</title>
-    <link href="img/favicon.png" rel="icon">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="../../img/favicon.png" rel="icon">
+    <link href="../../css/main.css" rel="stylesheet">
 </head>
 
 <body class="bgcloud grey">
     <header>
         <div class="container">
             <input class="search" type="search" placeholder="Search reviews">
-            <a href="index.html" class="brand"><img src="img/logo.png" width="150"></a>
+            <a href="../../index.html" class="brand"><img src="../../img/logo.png" width="150"></a>
         </div>
     </header>
     <nav>
         <ul>
             <div class="container">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Featured</a></li>
-                <li><a href="index.html">Latest</a></li>
-                <li><a href="index.html">Genres</a></li>
-                <li><a href="index.html">Submit</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../featured.html">Featured</a></li>
+                <li><a href="../../latest.html">Latest</a></li>
+                <li><a href="../../genres/index.html">Genres</a></li>
+                <li><a href="../../trailers.html">Trailers</a></li>
+                <li><a href="../../about-us.html">About Us</a></li>
             </div>
         </ul>
     </nav>
@@ -32,19 +33,19 @@
     <div class="container">
 
         <div class="breadcrumb">
-            <a href="index.html">Home</a>
-            <a href="#">Genres</a>
-            <a href="#">Family</a>
+            <a href="../../index.html">Home</a>
+            <a href="../../genres/index.html">Genres</a>
+            <a href="../../genres/family/index.html">Family</a>
             <a href="#">Inside Out</a>
         </div>
 
         <div class="poster">
-            <img src="img/inside_out.jpg">
+            <img src="../../img/poster/inside_out.jpg">
         </div>
 
         <div class="description">
 
-            <h2>Inside Out <a href="#"><small>Family</small></a></h2>
+            <h2>Inside Out <a href="../family/index.html"><small>Family</small></a></h2>
             <p>4 / 5 <span class="rated">&#9733;&#9733;&#9733;&#9733;</span><span>&#9733;</span></p>
             <p>4 Dec 2008 | 97 Mins</p>
 
@@ -55,35 +56,29 @@
 
             <h2>Directors</h2>
 
-            <div class="cast-crew">
+            <div class="directors">
                 <div class="avatar">
-                    <img src="img/tom_cruise.jpg">
-                    <p>Tom Cruise</p>
+                    <img src="../../img/avatar/byron_howard.jpg">
+                    <p>Byron Howard</p>
                 </div>
 
                 <div class="avatar">
-                    <img src="img/avatar_chloe_grace.jpg">
-                    <p>Chloë Grace</p>
-                </div>
-
-                <div class="avatar">
-                    <img src="img/avatar_miley_cyrus.jpg">
-                    <p>Miley Cyrus</p>
+                    <img src="../../img/avatar/chris_williams.jpg">
+                    <p>Chris Williams</p>
                 </div>
             </div>
 
-            <a class="btn-block" href="#reco">Reviews / Comments</a>
+            <a class="btn-block" href="#reviews">Reviews / Comments</a>
 
         </div>
 
 
-        <section style="clear: both">
-
-            <div class="tab">Trailer</div>
-            <div class="tab">Gallery</div>
-            <hr style="margin-top: 0">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/IBsg00NnzGg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <!-- Trailer -->
+        <section id="trailer">
+            <div class="title">Trailer</div>
+            <iframe id="trailer-box" width="100%" height="450" src="https://www.youtube.com/embed/3JNLwlcPBPI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </section>
+        <!-- End of Trailer -->
 
         <div class="reviews" id="reco">
             <div class="review-count">Reviews (2)</div>
