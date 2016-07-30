@@ -404,11 +404,11 @@ p small {
 }
 
 #contact {
-    width: 450px;
+    width: 300px;
 }
 
 #contact button {
-    float: right;
+    width: 100%;
 }
 
 
