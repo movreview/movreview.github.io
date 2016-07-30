@@ -728,14 +728,17 @@ p small {
 }
 
 
-/* Inverse */
+/* More */
 
-.logo-dark {
-    filter: invert(1);
-}
-
-.inverse {
-    filter: invert(1);
+.notes {
+    background: rgba(000, 000, 000, 0.5);
+    color: white;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 16px;
+    max-width: 400px;
+    border-radius: 200px
 }
 
 
