@@ -1,6 +1,6 @@
 /*  
     Movie Reviews Website
-    21 Jul 2016
+    Started on 21 Jul 2016
     By Quan You
 */
 
@@ -11,6 +11,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    /* Using System UI Fonts In Web - Currenty not in use */
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
     color: #95a5a6;
     background-color: #131519;
 }
@@ -46,16 +48,6 @@ footer p {
 
 section {
     clear: both;
-}
-
-section .title {
-    background-color: white;
-    opacity: 0.35;
-    text-align: center;
-    padding: 15px 0;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    color: black;
 }
 
 abbr {
@@ -121,7 +113,7 @@ textarea {
 .container {
     /* Main Container for Large Device | Currently Useless | But use as a fallback */
     max-width: 88%;
-    /* Disable Zoom ATM */
+    /*Disable Zoom ATM */
     min-width: 1100px;
     /* Main Container width */
     width: 1100px;
@@ -230,7 +222,7 @@ nav ul li a:hover {
 
 .thumbnail img {
     width: 162.85px;
-    height: 235px;
+    height: 255px;
 }
 
 .thumbnail img:hover {
@@ -287,30 +279,6 @@ p small {
     margin: 20px 0;
     width: 100%;
     clear: both;
-}
-
-.reviews {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 3px;
-    width: 100%;
-    padding: 15px 0 15px 0;
-    margin-top: 20px;
-    text-align: center;
-    clear: both;
-}
-
-.review-comments {
-    text-align: left;
-    margin-left: 40px;
-}
-
-.review-comments blockquote {
-    border-left: 2px solid rgba(255, 255, 255, 0.5);
-    padding-left: 20px;
-}
-
-.review-comments hr {
-    max-width: 95%;
 }
 
 .description {
@@ -374,13 +342,6 @@ p small {
     color: black;
 }
 
-.half {
-    width: 48.2%;
-    float: left;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
 .card {
     border: 1px solid rgba(76, 77, 85, 0.5);
     width: 100%;
@@ -441,6 +402,14 @@ p small {
     color: white;
 }
 
+#contact {
+    width: 450px
+}
+
+#contact button {
+    float: right;
+}
+
 
 /*  
     Sections
@@ -453,7 +422,7 @@ p small {
     margin-top: 20px;
 }
 
-.slink {
+#social-links .slink {
     padding: 25px 0;
     width: 50%;
     float: left;
@@ -532,6 +501,66 @@ p small {
 }
 
 
+/* Genre Section */
+
+#genre .col-6 {
+    width: auto;
+    margin-left: auto;
+}
+
+.genre-type {
+    text-align: center;
+    float: left;
+    margin-right: 90px;
+}
+
+.genre-type img {
+    width: 78px;
+}
+
+.genre-type p {
+    margin-top: 0;
+}
+
+.genre-type a {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+.genre-poster {
+    float: left;
+    line-height: 5px;
+    margin-bottom: 15px;
+}
+
+.genre-poster img {
+    width: 172px;
+    height: 264px;
+    margin-left: -76.6px;
+}
+
+
+/* Trailer Section */
+
+#trailer .title {
+    background-color: white;
+    opacity: 0.35;
+    text-align: center;
+    padding: 15px 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: black;
+}
+
+#trailer-box {
+    border: 10px solid rgba(255, 255, 255, 0.35);
+    border-radius: 0 0 3px 3px;
+    border-top: 0;
+    width: 98.2%;
+}
+
+
 /* Reviews Section */
 
 #reviews .comment {
@@ -575,62 +604,7 @@ p small {
 }
 
 
-/* Trailer Section */
-
-#trailer-box {
-    border: 10px solid rgba(255, 255, 255, 0.35);
-    border-radius: 0 0 3px 3px;
-    border-top: 0;
-    width: 98.2%;
-}
-
-
-/*
-    End of Section
-*/
-
-
-/* Genre Section */
-
-#genre .col-6 {
-    width: auto;
-    margin-left: auto;
-}
-
-.genre-type {
-    text-align: center;
-    float: left;
-    margin-right: 90px;
-}
-
-.genre-type img {
-    width: 78px;
-}
-
-.genre-type p {
-    margin-top: 0;
-}
-
-.genre-type a {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 6px 10px;
-    border-radius: 3px;
-}
-
-.genre-poster {
-    float: left;
-    line-height: 5px;
-    margin-bottom: 15px;
-}
-
-.genre-poster img {
-    width: 172px;
-    height: 264px;
-    margin-left: -82.4px;
-}
-
-
-/* Genre */
+/* === End of Section === */
 
 
 /* Text Variants */
@@ -748,6 +722,10 @@ p small {
     background: linear-gradient(#080705, #2f4a5f);
 }
 
+.bgaction {
+    background: linear-gradient(#37506d, #a24441);
+}
+
 
 /* Inverse */
 
@@ -768,10 +746,6 @@ p small {
     }
     #banner {
         background-position: top;
-    }
-    #banner h2,
-    #banner p {
-        text-shadow: 6px 6px 5px black;
     }
 }
 
