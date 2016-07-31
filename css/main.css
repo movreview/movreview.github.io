@@ -723,8 +723,18 @@ p small {
     background: linear-gradient(#080705, #2f4a5f);
 }
 
+
+/* Science Fiction Poster*/
+
 .bgaction {
     background: linear-gradient(#37506d, #a24441);
+}
+
+
+/* Angry Poster*/
+
+.bgangry {
+    background: linear-gradient(#960908, #f16e18);
 }
 
 
