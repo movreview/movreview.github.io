@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    /* Using System UI Fonts In Web - Currenty not in use */
+    /* Using System UI Fonts - Currenty not in use */
     /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
     color: #95a5a6;
     background-color: #131519;
@@ -111,11 +111,11 @@ textarea {
 /* Important */
 
 .container {
-    /* Main Container for Large Device | Currently Useless | But use as a fallback */
+    /* Main container for Large Device | Currently Useless | But use as a fallback */
     max-width: 88%;
-    /*Disable Zoom ATM */
+    /* Disable zoom ATM */
     min-width: 1100px;
-    /* Main Container width */
+    /* Main container width */
     width: 1100px;
     margin: 0 auto;
 }
