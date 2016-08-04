@@ -64,6 +64,11 @@ hr {
 
 /* Input */
 
+input:focus,
+button:focus {
+    outline: 0;
+}
+
 input[type=search] {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -71,10 +76,6 @@ input[type=search] {
     height: 32px;
     color: white;
     text-indent: 20px;
-}
-
-input[type=search]:focus {
-    outline: 0;
 }
 
 input[type=name] {
@@ -494,7 +495,7 @@ p small {
 }
 
 #subscription button:hover {
-    background-color: #555;
+    background-color: #2ecc71;
 }
 
 
