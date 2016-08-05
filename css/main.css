@@ -729,13 +729,6 @@ p small {
 
 /* Extra */
 
-code {
-    background: pink;
-    color: black;
-    padding: 4px;
-    border-radius: 3px;
-}
-
 .info {
     color: white;
     position: fixed;
