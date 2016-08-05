@@ -727,18 +727,7 @@ p small {
 }
 
 
-/* Sandbox */
-
-.info {
-    background: rgba(000, 000, 000, 0.5);
-    color: white;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    padding: 16px;
-    max-width: 400px;
-    border-radius: 200px
-}
+/* Extra */
 
 code {
     background: pink;
@@ -747,15 +736,15 @@ code {
     border-radius: 3px;
 }
 
-.references {
-    background: rgba(000, 000, 000, 0.5);
+.info {
     color: white;
     position: fixed;
     right: 10px;
     bottom: 10px;
-    padding: 12px;
     max-width: 400px;
-    border-radius: 200px
+    background: rgba(0, 0, 0, 0.498039);
+    padding: 12px;
+    border-radius: 200px;
 }
 
 
