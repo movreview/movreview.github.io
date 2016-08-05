@@ -689,7 +689,7 @@ p small {
 /* Yellow Poster*/
 
 .bgyellow {
-    background: linear-gradient(#edc30c, #e6d14e);
+    background: linear-gradient(#ffb300, #e6d14e);
 }
 
 
@@ -744,6 +744,17 @@ p small {
     right: 10px;
     bottom: 10px;
     padding: 16px;
+    max-width: 400px;
+    border-radius: 200px
+}
+
+.references {
+    background: rgba(000, 000, 000, 0.5);
+    color: white;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 12px;
     max-width: 400px;
     border-radius: 200px
 }
