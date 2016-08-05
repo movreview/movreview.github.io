@@ -740,6 +740,13 @@ p small {
     border-radius: 200px
 }
 
+code {
+    background: pink;
+    color: black;
+    padding: 4px;
+    border-radius: 3px;
+}
+
 .references {
     background: rgba(000, 000, 000, 0.5);
     color: white;
